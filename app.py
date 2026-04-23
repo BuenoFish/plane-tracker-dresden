@@ -163,7 +163,7 @@ st.markdown("""
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 CALLSIGN = "D-ECJU"
-ICAO24   = "3d0aee"   # wird dynamisch ermittelt
+ICAO24   = "3d0aee"  # D-ECJU Cessna C172
 OPENSKY_URL = "https://opensky-network.org/api"
 
 # ── Helper Functions ──────────────────────────────────────────────────────────
@@ -333,7 +333,7 @@ def get_aircraft_data(icao_override: str) -> dict | None:
 if refresh_btn:
     st.cache_data.clear()
 
-aircraft = get_aircraft_data(icao_input if icao_input else "")
+aircraft = get_aircraft_data(icao_input if icao_input else ICAO24)
 
 # ── Display ───────────────────────────────────────────────────────────────────
 if aircraft:
