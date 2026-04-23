@@ -163,7 +163,7 @@ st.markdown("""
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 CALLSIGN = "D-ECJU"
-ICAO24   = None   # wird dynamisch ermittelt
+ICAO24   = 3d0aee   # wird dynamisch ermittelt
 OPENSKY_URL = "https://opensky-network.org/api"
 
 # ── Helper Functions ──────────────────────────────────────────────────────────
